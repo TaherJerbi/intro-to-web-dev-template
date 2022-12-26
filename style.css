@@ -1,0 +1,32 @@
+.iframe-full {
+  width: 100%;
+  min-height: 500px;
+}
+
+.iframe-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+  width: 100%;
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.iframe-title {
+  color: black;
+  font-size: 64px;
+  font-weight: bold;
+}
+.iframe-description {
+  color: black;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 600px) {
+  .iframe-grid {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
